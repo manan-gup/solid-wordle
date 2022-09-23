@@ -13,7 +13,7 @@ export function Cell(props) {
         "justify-content": "center",
       }}
     >
-      {props.values()[props.r][props.c].toUpperCase()}
+      {props.values[props.r][props.c].toUpperCase()}
     </div>
   );
 }

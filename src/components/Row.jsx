@@ -10,7 +10,7 @@ export function Row(props) {
         "grid-gap": "5px",
       }}
     >
-      <For each={props.values()[props.r]}>
+      <For each={props.values[props.r]}>
         {(_, index) => <Cell values={props.values} r={props.r} c={index()} />}
       </For>
     </div>
