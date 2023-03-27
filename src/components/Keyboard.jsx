@@ -29,10 +29,22 @@ export function Keyboard(props) {
     }
   }
   return (
-    <div>
+    <div
+      style={{
+        display: "grid",
+        "grid-template-columns": "repeat(10, 1fr)",
+        margin: "0 auto",
+      }}
+    >
       {qwerty.map((item) => {
         return (
-          <button type="button" onClick={keyClickHandler}>
+          <button
+            style={{
+              all: "unset",
+            }}
+            type="button"
+            onClick={keyClickHandler}
+          >
             {item.letter}
           </button>
         );
